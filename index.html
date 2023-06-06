@@ -2,38 +2,48 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Новостной сайт про компьютеры</title>
+ <title>Сайт про киберновости</title>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Код Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=ВАШ_ID_АНАЛИТИКИ"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'ВАШ_ID_АНАЛИТИКИ');
+ </script>
  <style>
   body {
    font-family: Arial, sans-serif;
-   margin: 0; /* убираем отступы по умолчанию */
+   margin: 0;
    padding: 0;
   }
 
   header {
-   background-color: #333; /* цвет фона */
-   color: #fff; /* цвет текста */
-   padding: 20px; /* внутренние отступы */
-   text-align: center; /* выравнивание по центру */
+   background-color: #333;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+   margin-bottom: 20px;
   }
 
   h1 {
-   margin: 0; /* убираем отступы сверху и снизу */
+   margin: 0;
   }
 
   nav {
-   background-color: #ccc; /* цвет фона */
+   background-color: #ccc;
    padding: 10px;
   }
 
   nav ul {
-   list-style: none; /* убираем маркеры списка */
+   list-style: none;
    margin: 0;
    padding: 0;
-   display: flex; /* располагаем пункты горизонтально */
-   justify-content: space-around; /* равномерно распределяем пункты */
+   display: flex;
+   justify-content: space-around;
   }
 
   nav li {
@@ -42,43 +52,43 @@
   }
 
   nav a {
-   color: #333; /* цвет текста */
-   text-decoration: none; /* убираем подчеркивание */
-   text-transform: uppercase; /* приводим текст к верхнему регистру */
-   letter-spacing: 1px; /* добавляем межбуквенное расстояние */
-   padding: 5px 10px; /* отступ сверху и снизу по 5px, слева и справа по 10px */
-   border-radius: 5px; /* закругляем углы */
-   transition: background-color 0.3s ease; /* плавное изменение цвета фона при наведении */
+   color: #333;
+   text-decoration: none;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   padding: 5px 10px;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
   }
 
   nav a:hover {
-   background-color: #333; /* меняем цвет фона */
-   color: #fff; /* меняем цвет текста */
+   background-color: #333;
+   color: #fff;
   }
 
   main {
-   display: flex; /* располагаем элементы горизонтально */
-   flex-wrap: wrap; /* автоматически переносим элементы на следующую строку */
-   justify-content: space-between; /* равномерно распределяем элементы по ширине */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
    padding: 20px;
   }
 
   article {
    background-color: #ccc;
-   flex-basis: calc(33.33% - 10px); /* ширина элемента (33.33% - отступы) */
-   margin-bottom: 20px; /* отступ снизу */
-   text-align: center; /* выравнивание по центру */
+   flex-basis: calc(33.33% - 10px);
+   margin-bottom: 20px;
+   text-align: center;
    padding: 20px;
   }
 
   img {
-   max-width: 100%; /* максимальная ширина изображения - 100% от ширины родительского элемента */
+   max-width: 100%;
    height: auto;
   }
 
   figcaption {
-   font-style: italic; /* курсив */
-   margin-top: 10px; /* отступ сверху */
+   font-style: italic;
+   margin-top: 10px;
   }
 
   footer {
@@ -92,7 +102,7 @@
 </head>
 <body>
  <header>
-  <h1>Новостной сайт про компьютеры</h1>
+  <h1>Сайт про киберновости</h1>
  </header>
 
  <nav>
@@ -107,50 +117,51 @@
 
  <main>
   <article>
-   <img src="https://cdn.pixabay.com/photo/2015/03/26/09/43/laptop-690047_960_720.jpg" alt="Компьютер">
-   <h2>Новый MacBook Pro</h2>
-   <p>Apple представила новый MacBook Pro с 14-дюймовым экраном и M1 Pro или M1 Max процессором.</p>
+   <img src="https://cdn.pixabay.com/photo/2019/01/29/17/47/network-3965477_960_720.jpg" alt="Социальные сети">
+   <h2>Что нового в социальных сетях?</h2>
+   <p>Большинство из нас проводят много времени в социальных сетях. Что же нового появилось в Facebook, Instagram и VK?</p>
    <figcaption>Фото: Pexels</figcaption>
   </article>
 
   <article>
-   <img src="https://cdn.pixabay.com/photo/2015/09/09/19/57/monitor-932886_960_720.jpg" alt="Монитор">
-   <h2>ASUS представила монитор с частотой обновления 360 Гц</h2>
-   <p>ASUS выпустила новый монитор ROG Swift 360 с частотой обновления 360 Гц и разрешением 1920х1080.</p>
+   <img src="https://cdn.pixabay.com/photo/2015/05/25/18/24/smartphone-784314__340.jpg" alt="Смартфон">
+   <h2>Новый смартфон OnePlus 9</h2>
+   <p>Китайская компания OnePlus выпустила новый смартфон OnePlus 9 с 120-герцовым экраном и мощным процессором Snapdragon 888.</p>
    <figcaption>Фото: Pexels</figcaption>
   </article>
 
   <article>
-   <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="Рабочее место">
-   <h2>12 лучших рабочих столов для дома</h2>
-   <p>Мы подобрали 12 лучших рабочих столов для работы или учебы дома - от компактных до просторных.</p>
+   <img src="https://cdn.pixabay.com/photo/2018/04/08/13/07/messages-3292712__340.jpg" alt="Сообщения">
+   <h2>Как безопасно общаться в Messenger?</h2>
+   <p>Messenger - один из самых популярных мессенджеров в мире. Как сделать вашу переписку максимально безопасной?</p>
    <figcaption>Фото: Pexels</figcaption>
   </article>
 
   <article>
-   <img src="https://cdn.pixabay.com/photo/2017/02/10/14/10/laptop-2057745_960_720.jpg" alt="Ноутбук">
-   <h2>HP выпустила новый ноутбук для работы и игр</h2>
-   <p>HP представила новый ноутбук Omen 17 с 17-дюймовым экраном и производительным графическим процессором NVIDIA.</p>
+   <img src="https://cdn.pixabay.com/photo/2018/12/26/11/08/cyber-3898497__340.jpg" alt="Кибербезопасность">
+   <h2>5 советов по кибербезопасности в интернете</h2>
+   <p>Киберпреступление стало серьезной угрозой в интернете. Как защитить свои данные и личную жизнь?</p>
    <figcaption>Фото: Pexels</figcaption>
   </article>
 
   <article>
-   <img src="https://cdn.pixabay.com/photo/2014/05/02/21/49/laptop-336378_960_720.jpg" alt="Клавиатура">
-   <h2>Лучшие игровые клавиатуры</h2>
-   <p>Мы составили рейтинг из 10 лучших игровых клавиатур, которые помогут вам достичь максимальной производительности в играх.</p>
+   <img src="https://cdn.pixabay.com/photo/2017/06/29/11/13/gamer-2453248__340.jpg" alt="Игровая культура">
+   <h2>Эволюция игровой культуры: как менялись игры и игроки</h2>
+   <p>Игры стали неотъемлемой частью нашей жизни. Как менялась игровая культура и что ждет нас в будущем?</p>
    <figcaption>Фото: Pexels</figcaption>
   </article>
 
   <article>
-   <img src="https://cdn.pixabay.com/photo/2016/02/19/11/54/computer-1209641_960_720.jpg" alt="Компьютерный стол">
-   <h2>10 прекрасных компьютерных столов для дома</h2>
-   <p>Мы подобрали 10 лучших компьютерных столов для комфортного и продуктивного рабочего процесса.</p>
+   <img src="https://cdn.pixabay.com/photo/2020/11/11/11/12/cyber-automation-5730736__340.jpg" alt="Искусственный интеллект">
+   <h2>Развитие искусственного интеллекта: как он меняет нашу жизнь</h2>
+   <p>Искусственный интеллект - это неотъемлемая часть современных технологий. Как его развитие влияет на нашу жизнь?</p>
    <figcaption>Фото: Pexels</figcaption>
   </article>
  </main>
 
  <footer>
-  <p>&copy; 2021 Новостной сайт про компьютеры</p>
+  <p>&copy; 2021 Сайт прокиберновости</p>
  </footer>
 </body>
 </html>
+  
